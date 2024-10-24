@@ -39,4 +39,4 @@ Copy code
 git clone https://github.com/yourusername/roi-calculator.git
 cd roi-calculator```
 
-**Open the project:** Open the index.html file in your browser to launch the ROI Calculator.
+Open the project: Open the index.html file in your browser to launch the ROI Calculator.
