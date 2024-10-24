@@ -1,13 +1,15 @@
 # ROI_Calculator
 
-Project Overview
+# Project Overview
+
 This ROI Calculator is a web-based tool designed to help marketers and businesses calculate the Return on Investment (ROI) for their digital marketing campaigns. The application allows users to input key campaign metrics like ad spend, cost per click (CPC), and conversion rates to dynamically calculate projected gross revenue, net results, and ROI.
 
 The tool is built using HTML, CSS, and JavaScript for easy deployment and can handle currency conversion between USD and INR.
 
-Features
-Currency Selector: Allows users to choose between USD and INR.
-Interactive Input Controls: Users can adjust input values such as ad spend, CPC, and conversion rates using sliders.
+# Features
+
+*Currency Selector:* Allows users to choose between USD and INR.
+*Interactive Input Controls:* Users can adjust input values such as ad spend, CPC, and conversion rates using sliders.
 Real-time Calculations: Gross revenue, net result, and ROI are calculated and displayed instantly as users adjust inputs.
 Profit or Loss Messaging: The tool displays whether the campaign will result in profit or loss based on the user's input, with custom messages.
 Tech Stack
