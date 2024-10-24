@@ -45,7 +45,7 @@ The tool is built using HTML, CSS, and JavaScript for easy deployment and can ha
 **Total Clicks Calculation:**
 
 javascript
-Copy code
+
 const totalClicks = adSpendUSD / cpcUSD;
 
 Total clicks are calculated by dividing the ad spend by the CPC.
@@ -53,7 +53,7 @@ Total clicks are calculated by dividing the ad spend by the CPC.
 **Total Conversions Calculation:**
 
 javascript
-Copy code
+
 const totalConversions = totalClicks * (conversionRate / 100) * (customerConversionRate / 100);
 
 This multiplies the total clicks by the conversion rates (both opt-in and lead-to-customer) to estimate total conversions.
@@ -61,7 +61,7 @@ This multiplies the total clicks by the conversion rates (both opt-in and lead-t
 **Gross Revenue Calculation:**
 
 javascript
-Copy code
+
 const grossRevenueUSD = totalConversions * salePriceUSD;
 
 This calculates the total gross revenue based on the conversions and the average sale price.
