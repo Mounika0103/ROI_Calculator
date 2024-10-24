@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ROI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expected ROI Calculator</h1>
+        
+        <div class="input-group">
+            <label for="currency">Select Currency:</label>
+            <select id="currency" onchange="updateCurrency()">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="adSpend">Monthly Ad Spend ($):</label>
+            <input type="range" id="adSpend" min="0" max="100000" value="27000" oninput="updateValues()">
+            <span id="adSpendValue">$27,000</span>
+        </div>
+
+        <div class="input-group">
+            <label for="cpc">Cost Per Click (CPC) ($):</label>
+            <input type="range" id="cpc" min="0" max="100" value="27" oninput="updateValues()">
+            <span id="cpcValue">$27.00</span>
+        </div>
+
+        <div class="input-group">
+            <label for="conversionRate">Opt-In Conversion Rate (%):</label>
+            <input type="range" id="conversionRate" min="0" max="100" value="6.51" oninput="updateValues()">
+            <span id="conversionRateValue">6.51%</span>
+        </div>
+
+        <div class="input-group">
+            <label for="customerConversionRate">Lead to Customer Conversion Rate (%):</label>
+            <input type="range" id="customerConversionRate" min="0" max="100" value="49" oninput="updateValues()">
+            <span id="customerConversionRateValue">49%</span>
+        </div>
+
+        <div class="input-group">
+            <label for="salePrice">Average Sale Price ($):</label>
+            <input type="range" id="salePrice" min="0" max="500" value="20" oninput="updateValues()">
+            <span id="salePriceValue">$20</span>
+        </div>
+
+        <div class="result">
+            <h3>Results:</h3>
+            <p id="grossRevenue">Gross Revenue: $0.00</p>
+            <p id="netResult">Net Result: $0.00</p>
+            <p id="roi">ROI: 0.00%</p>
+            <p id="lossMessage"></p>
+            <p id="profitMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
