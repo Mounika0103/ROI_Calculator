@@ -40,27 +40,27 @@ The tool is built using HTML, CSS, and JavaScript for easy deployment and can ha
 **View Results:** Instantly see the gross revenue, net result, and ROI based on your inputs.
 
 # How It Works
-**Currency Conversion:** If INR is selected, the exchange rate (defined as 83 in script.js) is applied to all relevant calculations.
+1. **Currency Conversion:** If INR is selected, the exchange rate (defined as 83 in script.js) is applied to all relevant calculations.
 
-**Total Clicks Calculation:**
+2. **Total Clicks Calculation:**
 
 ```javascript
 const totalClicks = adSpendUSD / cpcUSD;```
 Total clicks are calculated by dividing the ad spend by the CPC.
 
-**Total Conversions Calculation:**
+3. **Total Conversations Calculation:**
 
 ```javascript
 const totalConversions = totalClicks * (conversionRate / 100) * (customerConversionRate / 100);```
 This multiplies the total clicks by the conversion rates (both opt-in and lead-to-customer) to estimate total conversions.
 
-**Gross Revenue Calculation:**
+4. **Gross Revenue Calculation:**
 
 ```javascript
 const grossRevenueUSD = totalConversions * salePriceUSD;```
 This calculates the total gross revenue based on the conversions and the average sale price.
 
-**ROI Calculation:**
+5. **ROI Calculation:**
 
 ```javascript
 const roi = (netResultUSD / adSpendUSD) * 100;```
