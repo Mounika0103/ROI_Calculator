@@ -44,34 +44,26 @@ The tool is built using HTML, CSS, and JavaScript for easy deployment and can ha
 
 **Total Clicks Calculation:**
 
-javascript
-
-const totalClicks = adSpendUSD / cpcUSD;
-
+```javascript
+const totalClicks = adSpendUSD / cpcUSD;```
 Total clicks are calculated by dividing the ad spend by the CPC.
 
 **Total Conversions Calculation:**
 
-javascript
-
-const totalConversions = totalClicks * (conversionRate / 100) * (customerConversionRate / 100);
-
+```javascript
+const totalConversions = totalClicks * (conversionRate / 100) * (customerConversionRate / 100);```
 This multiplies the total clicks by the conversion rates (both opt-in and lead-to-customer) to estimate total conversions.
 
 **Gross Revenue Calculation:**
 
-javascript
-
-const grossRevenueUSD = totalConversions * salePriceUSD;
-
+```javascript
+const grossRevenueUSD = totalConversions * salePriceUSD;```
 This calculates the total gross revenue based on the conversions and the average sale price.
 
 **ROI Calculation:**
 
-javascript
-Copy code
-const roi = (netResultUSD / adSpendUSD) * 100;
-
+```javascript
+const roi = (netResultUSD / adSpendUSD) * 100;```
 The ROI is computed by dividing the net result (gross revenue minus ad spend) by the ad spend.
 
 # Setup Instructions
@@ -83,10 +75,9 @@ Web Browser (Chrome, Firefox, Safari, etc.)
 
 **Clone the repository:**
 
-bash
-Copy code
+```bash
 git clone https://github.com/yourusername/roi-calculator.git
-cd roi-calculator
+cd roi-calculator```
 
 **Open the project:** Open the index.html file in your browser to launch the ROI Calculator.
 
