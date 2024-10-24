@@ -8,8 +8,10 @@ The tool is built using HTML, CSS, and JavaScript for easy deployment and can ha
 
 # Features
 
-*Currency Selector:* Allows users to choose between USD and INR.
-*Interactive Input Controls:* Users can adjust input values such as ad spend, CPC, and conversion rates using sliders.
+# Currency Selector: 
+Allows users to choose between USD and INR.
+# Interactive Input Controls: 
+Users can adjust input values such as ad spend, CPC, and conversion rates using sliders.
 Real-time Calculations: Gross revenue, net result, and ROI are calculated and displayed instantly as users adjust inputs.
 Profit or Loss Messaging: The tool displays whether the campaign will result in profit or loss based on the user's input, with custom messages.
 Tech Stack
